@@ -13,5 +13,9 @@
         <p>Age: Finch</p>
         {% endif %}
     </div>
+    <div class="card-action">
+        <a href="{% url 'finchs_update' finch.id %}">Edit</a>
+        <a href="{% url 'finchs_delete' finch.id %}">Delete</a>
+      </div>
 </div>
 {% endblock %}
